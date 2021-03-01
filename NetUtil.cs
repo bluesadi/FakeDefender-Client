@@ -12,7 +12,9 @@ namespace FakeDefender_Client {
             jsonWriter.WritePropertyName("uuid");
             jsonWriter.WriteValue(uuid);
             jsonWriter.WritePropertyName("image");
-            jsonWriter.WriteValue(Convert.ToBase64String(image.ToBytes()));
+            byte[] buf;
+            Cv2.ImEncode(".png", image, out buf);
+            jsonWriter.WriteValue(Convert.ToBase64String(buf));
             jsonWriter.WriteEndObject();
             jsonWriter.Flush();
             return stringWriter.GetStringBuilder().ToString();
