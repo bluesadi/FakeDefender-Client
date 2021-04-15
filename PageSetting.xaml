@@ -1,4 +1,5 @@
 ﻿<Page x:Class="FakeDefender_Client.PageSetting"
+      xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,6 +10,6 @@
       Title="PageSetting">
 
     <Grid>
-        <TextBlock Text="test"></TextBlock>
+         
     </Grid>
 </Page>

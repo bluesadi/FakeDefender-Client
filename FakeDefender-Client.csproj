@@ -5,6 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>FakeDefender_Client</RootNamespace>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon></ApplicationIcon>
+	<UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -19,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Images\logo.ico" />
     <None Remove="Images\main.png" />
   </ItemGroup>
 
@@ -46,10 +49,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Resource Include="Resources\logo.ico" />
     <Resource Include="Images\main.png" />
   </ItemGroup>
 
